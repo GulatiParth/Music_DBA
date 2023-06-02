@@ -1,0 +1,8 @@
+Q5 a)
+No authorized routine named "JSON_VAL" of type "FUNCTION" having
+compatible arguments was found.  SQLSTATE=42884
+
+
+Q5 b)
+SQL0104N  An unexpected token "JSON_TABLE" was found following "nter = 
+COUNT(*) FROM".  Expected tokens may include:  ",".  LINE NUMBER=1.

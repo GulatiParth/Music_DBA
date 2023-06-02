@@ -1,0 +1,47 @@
+
+Q2 a)
+BAND_NAME          FORMATION_YEAR  CURRENT_STATUS  BASE_CITY       NUM_OF_NOMINATED_AWDS
+----------------------------------------------------------------------------
+Coldplay           1996            Active          London          1
+Muse               1994            Active          Teignmouth  	 1
+Radiohead          1985            Active          Oxford      	 1
+Tame Impala        2007            Active          Perth       	 1
+The 1975           2002            Active          Manchester  	 1
+The Black Keys     2001            Active          Akron       	 1
+The Lumineers      2002            Active          Denver      	 1
+The Strokes        1998            Active          New York City   1
+The Killers        2001            Active          Las Vegas 	 2
+Twenty One Pilots  2009 	     Active 	   Columbus 	 2
+Vampire Weekend    2006  	     Active 	   New York City   2
+Imagine Dragons    2008 	     Active 	   Las Vegas 	 3
+The Chainsmokers   2012 	     Active  	   New York City   3
+
+13 record(s) selected.
+
+
+Q2 b)
+BAND_NAME              FORMATION_YEAR   LAST_NAME          FIRST_NAME        START_YEAR   ROLE
+-------------------------------------------------------------------------------------------------------------------------------
+Arctic Monkeys         2002             Cook               Matt              01/01/2002   Drummer
+Arctic Monkeys         2002             Holden             Nick              01/01/2002   Bassist
+Arctic Monkeys         2002             O'Malley           Jamie             01/01/2002   Guitarist
+Arctic Monkeys         2002             Turner             Alex              01/01/2002   Lead vocalist
+The 1975               2002             Daniel             Adam              01/01/2012   Drummer
+The 1975               2002             Hanley             Ross              01/01/2012   Keyboardist
+The 1975               2002             Healy              Matthew           01/01/2012   Lead vocalist
+The 1975               2002             Tobin              George            01/01/2012   Bassist
+Imagine Dragons        2008             Gualti             Parth             02/10/2023   DJ
+Imagine Dragons        2008             Ivanoff            Daniel            01/01/2011   Guitarist
+Imagine Dragons        2008             Maddock            Ben               01/01/2011   Drummer
+Imagine Dragons        2008             Reynolds           Dan               01/01/2012   Lead vocalist
+Imagine Dragons        2008             Sermon             Wayne             01/01/2011   Bassist
+Twenty One Pilots      2009             Fairchild          Chris             01/01/2011   Keyboardist
+Twenty One Pilots      2009             Joseph             Tyler             01/01/2009   Lead vocalist
+Twenty One Pilots      2009             Salih              Josh              01/01/2009   Drummer
+Twenty One Pilots      2009             Trench             Nick Thomas       01/01/2011   Bassist
+The Chainsmokers       2012             Pall               Alex              01/01/2012   DJ
+The Chainsmokers       2012             Taggart            Andrew            01/01/2012   DJ
+
+19 record(s) selected.
+
+

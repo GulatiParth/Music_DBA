@@ -1,0 +1,342 @@
+Q5)
+- The output from you (database owner) running a SELECT * FROM BANDINFO
+BAND_NAME                                                                                                                                                                                                                                                       FORMATION_YEAR CURRENT_STATUS BASE_CITY                                                                                                                                                                                                                                                       BASE_COUNTRY                                                                                                                                                                                                                                                    NUMBER_OF_BAND_MEMBERS NUMBER_OF_RELEASES GENRE                                                                                                                                                                                                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------- -------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------- ------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The 1975
+                                                                                                              2002 Active         Manchester
+
+                                                                          United Kingdom
+
+                                       4                  5 Indie Rock
+
+
+Twenty One Pilots
+                                                                                                              2009 Active         Columbus
+
+                                                                          USA
+
+                                       2                  5 Alternative
+
+
+Imagine Dragons
+                                                                                                              2008 Active         Las Vegas
+
+                                                                          USA
+
+                                       4                  4 Alternative Rock
+
+
+Arctic Monkeys
+                                                                                                              2002 Active         Sheffield
+
+                                                                          United Kingdom
+
+                                       4                  6 Indie Rock
+
+
+Foo Fighters
+                                                                                                              1994 Active         Seattle
+
+                                                                          USA
+
+                                       4                 10 Rock
+
+
+Coldplay
+                                                                                                              1996 Active         London
+
+                                                                          United Kingdom
+
+                                       4                  8 Alternative Rock
+
+
+The Strokes
+                                                                                                              1998 Active         New York City
+
+                                                                          USA
+
+                                       5                  6 Indie Rock
+
+
+Green Day
+                                                                                                              1986 Active         Oakland
+
+                                                                          USA
+
+                                       3                 13 Punk Rock
+
+
+Muse
+                                                                                                              1994 Active         Teignmouth
+
+                                                                          United Kingdom
+
+                                       3                  8 Alternative Rock
+
+
+Red Hot Chili Peppers
+                                                                                                              1983 Active         Los Angeles
+
+                                                                          USA
+
+                                       4                 11 Alternative Rock
+
+
+The Black Keys
+                                                                                                              2001 Active         Akron
+
+                                                                          USA
+
+                                       2                  9 Blues Rock
+
+
+Radiohead
+                                                                                                              1985 Active         Oxford
+
+                                                                          United Kingdom
+
+                                       5                  9 Alternative Rock
+
+
+Tame Impala
+                                                                                                              2007 Active         Perth
+
+                                                                          Australia
+
+                                       1                  4 Psychadelic Rock
+
+
+The Killers
+                                                                                                              2001 Active         Las Vegas
+
+                                                                          USA
+
+                                       4                  5 Indie Rock
+
+
+Foster The People
+                                                                                                              2009 Active         Los Angeles
+
+                                                                          USA
+
+                                       3                  3 Indie Pop
+
+
+The Lumineers
+                                                                                                              2002 Active         Denver
+
+                                                                          USA
+
+                                       3                  3 Folk Rock
+
+
+Vampire Weekend
+                                                                                                              2006 Active         New York City
+
+                                                                          USA
+
+                                       4                  4 Indie Rock
+
+
+The XX
+                                                                                                              2005 Active         London
+
+                                                                          United Kingdom
+
+                                       3                  4 Indie Pop
+
+
+The Chainsmokers
+                                                                                                              2012 Active         New York City
+
+                                                                          USA
+
+                                       2                  2 EDM
+
+
+Panic! At The Disco
+                                                                                                              2004 Active         Las Vegas
+
+                                                                          USA
+
+                                       3                  6 Pop Rock
+
+
+
+  20 record(s) selected.
+
+
+- The output from dba625b running a SELECT * FROM BANDINFO
+BAND_NAME                                                                                                                                                                                                                                                       FORMATION_YEAR CURRENT_STATUS BASE_CITY                                                                                                                                                                                                                                                       BASE_COUNTRY                                                                                                                                                                                                                                                    NUMBER_OF_BAND_MEMBERS NUMBER_OF_RELEASES GENRE                                                                                                                                                                                                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------- -------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------- ------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 record(s) selected.
+
+
+
+- The output from dba625c running a SELECT * FROM BANDINFO
+BAND_NAME                                                                                                                                                                                                                                                       FORMATION_YEAR CURRENT_STATUS BASE_CITY                                                                                                                                                                                                                                                       BASE_COUNTRY                                                                                                                                                                                                                                                    NUMBER_OF_BAND_MEMBERS NUMBER_OF_RELEASES GENRE                                                                                                                                                                                                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------- -------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------- ------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The 1975
+                                                                                                              2002 Active         Manchester
+
+                                                                          United Kingdom
+
+                                       4                  5 I********
+
+
+Twenty One Pilots
+                                                                                                              2009 Active         Columbus
+
+                                                                          USA
+
+                                       2                  5 A**********
+
+
+Imagine Dragons
+                                                                                                              2008 Active         Las Vegas
+
+                                                                          USA
+
+                                       4                  4 A***************
+
+
+Arctic Monkeys
+                                                                                                              2002 Active         Sheffield
+
+                                                                          United Kingdom
+
+                                       4                  6 I********
+
+
+Foo Fighters
+                                                                                                              1994 Active         Seattle
+
+                                                                          USA
+
+                                       4                 10 R***
+
+
+Coldplay
+                                                                                                              1996 Active         London
+
+                                                                          United Kingdom
+
+                                       4                  8 A***************
+
+
+The Strokes
+                                                                                                              1998 Active         New York City
+
+                                                                          USA
+
+                                       5                  6 I********
+
+
+Green Day
+                                                                                                              1986 Active         Oakland
+
+                                                                          USA
+
+                                       3                 13 P********
+
+
+Muse
+                                                                                                              1994 Active         Teignmouth
+
+                                                                          United Kingdom
+
+                                       3                  8 A***************
+
+
+Red Hot Chili Peppers
+                                                                                                              1983 Active         Los Angeles
+
+                                                                          USA
+
+                                       4                 11 A***************
+
+
+The Black Keys
+                                                                                                              2001 Active         Akron
+
+                                                                          USA
+
+                                       2                  9 B*********
+
+
+Radiohead
+                                                                                                              1985 Active         Oxford
+
+                                                                          United Kingdom
+
+                                       5                  9 A***************
+
+
+Tame Impala
+                                                                                                              2007 Active         Perth
+
+                                                                          Australia
+
+                                       1                  4 P***************
+
+
+The Killers
+                                                                                                              2001 Active         Las Vegas
+
+                                                                          USA
+
+                                       4                  5 I********
+
+
+Foster The People
+                                                                                                              2009 Active         Los Angeles
+
+                                                                          USA
+
+                                       3                  3 I********
+
+
+The Lumineers
+                                                                                                              2002 Active         Denver
+
+                                                                          USA
+
+                                       3                  3 F********
+
+
+Vampire Weekend
+                                                                                                              2006 Active         New York City
+
+                                                                          USA
+
+                                       4                  4 I********
+
+
+The XX
+                                                                                                              2005 Active         London
+
+                                                                          United Kingdom
+
+                                       3                  4 I********
+
+
+The Chainsmokers
+                                                                                                              2012 Active         New York City
+
+                                                                          USA
+
+                                       2                  2 E**
+
+
+Panic! At The Disco
+                                                                                                              2004 Active         Las Vegas
+
+                                                                          USA
+
+                                       3                  6 P*******
+
+
+
+  20 record(s) selected.
+
+

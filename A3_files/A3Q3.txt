@@ -1,0 +1,27 @@
+
+Q3)
+-- ALTER AUDIT POLICY music_audit_pol STATUS NONE;
+-- ALTER AUDIT POLICY music_audit_genre STATUS NONE;
+
+-- INSERT INTO bandrecognition (band_name, award, nomination, year) 
+-- VALUES ('The 1975', 'New Grammy Award', 'A', 2022);
+
+-- UPDATE bandrecognition 
+-- SET year = 2014 
+-- WHERE band_name = 'Vampire Weekend' AND award = 'MTV Video Music Award for Best Art Direction';
+
+-- DELETE FROM bandrecognition 
+-- WHERE band_name = 'The 1975' AND year = 2022 AND award = 'New Grammy Award';
+
+-- UPDATE bandinfo 
+-- SET genre = 'Rock'
+-- WHERE band_name = 'The 1975' AND formation_year = 2002;
+
+-- SELECT * FROM BANDAUDIT
+
+TBLNM                                                        TBLOPS TBLDTTM
+------------------------------------------------------------ ------ --------------------------
+bandrecognition                                              I      2023-02-27-13.20.33.733000
+bandrecognition                                              U      2023-02-27-13.20.41.803000
+bandrecognition                                              D      2023-02-27-13.20.49.365000
+bandinfo                                                     U      2023-02-27-13.20.55.909000

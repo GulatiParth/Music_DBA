@@ -1,0 +1,42 @@
+CONNECT TO MUSIC;
+
+SELECT 
+    bi.band_name,
+    bi.base_city,
+    bi.genre,
+    br.award,
+    br.nomination,
+    br.year 
+FROM bandinfo bi 
+JOIN bandrecognition br ON bi.band_name = br.band_name
+WHERE bi.current_status = 'Active';
+
+
+
+
+BAND_NAME	             BASE_CITY	    GENRE	            AWARD	                                                      NOMINATION YEAR
+------------------------ -------------- ------------------- ----------------------------------------------------------- ---------- ----
+The 1975	             Manchester	    Rock	            Grammy Award for Best Rock Album	                        N          2020
+Twenty One Pilots	     	 Columbus	    Alternative	      Billboard Music Award for Top Rock Artist	                  A          2020
+Imagine Dragons	       Las Vegas	    Alternative Rock	MTV Europe Music Award for Best UK/Ireland Act	            N          2021
+Imagine Dragons	       Las Vegas	    Alternative Rock	American Music Award for Favorite Alternative Artist	      A          2014
+Imagine Dragons	       Las Vegas	    Alternative Rock	Grammy Award for Best Rock Performance	                  N          2019
+Coldplay	             London         Alternative Rock	MTV Video Music Award for Best Special Effects	            N          2017
+The Strokes	             New York City  Indie Rock	      NME Award for Best Album	                              N          2021
+Twenty One Pilots	       Columbus	    Alternative	      American Music Award for Favorite Pop/Rock Duo or Group     N          2017
+Muse	                   Teignmouth	    Alternative Rock	Q Award for Best Live Act	                              A          2010
+Vampire Weekend	       New York City  Indie Rock	      Grammy Award for Best Alternative Music Album	            N          2022
+The Black Keys	       Akron	    Blues Rock	      Grammy Award for Best Rock Performance	                  A          2013
+Radiohead	             Oxford	    Alternative Rock	MTV Video Music Award for Best Art Direction	            N          2016
+Tame Impala	             Perth	    Psychadelic Rock	ARIA Music Award for Best Group	                        A          2021     
+The Killers	             Las Vegas	    Indie Rock	      Grammy Award for Best Rock Album	                        N          2019
+The Killers	             Las Vegas	    Indie Rock	      BRIT Award for International Group	                        N          2022
+The Lumineers	       Denver         Folk Rock	      iHeartRadio Music Award for Best Alternative Rock Artist	N          2018
+Vampire Weekend	       New York City  Indie Rock	      MTV Video Music Award for Best Art Direction	            N          2013
+The Chainsmokers	     	 New York City  EDM	            iHeartRadio Music Award for Dance/EDM Song of the Year      N          2018
+The Chainsmokers	       New York City  EDM 	            Billboard Music Award for Top Dance/Electronic Artist	      N          2020
+The Chainsmokers	       New York City  EDM                 Grammy Award for Best Dance Recording	                  N          2020
+
+20 record(s) selected.
+
+

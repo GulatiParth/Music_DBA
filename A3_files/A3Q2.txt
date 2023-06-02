@@ -1,0 +1,24 @@
+
+Q2)
+-- CONNECT TO music USER parth USING "password"
+
+-- CREATE USER dba625a USING PASSWORD '123456'
+
+-- CONNECT RESET
+
+-- CONNECT TO music USER dba625a USING 123456;
+
+-- INSERT INTO bandrecognition (band_name, award, nomination, year) 
+-- VALUES ('The 1975', 'New Grammy Award', 'A', 2022);
+
+-- UPDATE bandrecognition 
+-- SET year = 2014 
+-- WHERE band_name = 'Vampire Weekend' AND award = 'MTV Video Music Award for Best Art Direction';
+
+-- DELETE FROM bandrecognition 
+-- WHERE band_name = 'The 1975' AND year = 2022 AND award = 'New Grammy Award';
+
+-- UPDATE bandinfo 
+-- SET genre = 'Rock'
+-- WHERE band_name = 'The 1975' AND formation_year = 2002;
+

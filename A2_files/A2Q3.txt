@@ -1,0 +1,20 @@
+Q3 a)
+-- CALL bandhistory('Imagine Dragons');
+
+  Return Status = 0
+
+Band Member History for band: Imagine Dragons
+Wayne   Sermon   Bassist    01/01/2011   12/31/9999
+Ben   Maddock   Drummer    01/01/2011   12/31/9999
+Daniel   Ivanoff   Guitarist    01/01/2011   12/31/9999
+Dan   Reynolds   Lead vocalist    01/01/2012   12/31/9999
+Parth   Gualti   DJ    02/10/2023   12/31/9999
+
+
+
+Q3 b)
+The command was processed as an SQL statement because it was not a
+valid Command Line Processor command.  During SQL processing it returned:
+SQL20524N  The statement failed because of an invalid period specification or
+period clause for period "BUSINESS_TIME / SYSTEM_TIME". Reason code "3".  LINE
+NUMBER=1.  SQLSTATE=428HY

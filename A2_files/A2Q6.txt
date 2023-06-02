@@ -1,0 +1,4 @@
+Q6
+
+SQL0104N  An unexpected token "JSON_TABLE" was found following "nter =
+COUNT(*) FROM".  Expected tokens may include:  ",".  LINE NUMBER=1.

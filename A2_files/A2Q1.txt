@@ -1,0 +1,127 @@
+Q1 a)
+
+-- INSERT INTO bandrecognition (band_name, award, year)
+-- VALUES ('Test sample', 'Award name', 2020);
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0407N  Assignment of a NULL value to a NOT NULL column "TBSPACEID=2, TABLEID=5, COLNO=2" is not allowed.  SQLSTATE=23502
+
+
+
+Q1 b)
+
+-- SELECT * FROM bandmembers 
+-- WHERE band_name = 'Imagine Dragons';
+
+BAND_ID	BAND_NAME		LAST_NAME	FIRST_NAME	ROLE			START_YEAR	END_YEAR
+1		Imagine Dragons	Reynolds	Dan		Lead vocalist	01/01/2012	12/31/9999
+2		Imagine Dragons	Sermon	Wayne		Bassist		01/01/2011	12/31/9999
+3		Imagine Dragons	Maddock	Ben		Drummer		01/01/2011	12/31/9999
+4		Imagine Dragons	Ivanoff	Daniel	Guitarist		01/01/2011	12/31/9999
+
+
+Q1 c)
+
+-- ALTER TABLE bandinfo ADD PRIMARY KEY (band_name);
+DB20000I  The SQL command completed successfully.
+
+-- ALTER TABLE bandmembers ADD CONSTRAINT fkey_bandmembers_bandinfo FOREIGN KEY (band_name) REFERENCES bandinfo (band_name) ON DELETE CASCADE;
+DB20000I  The SQL command completed successfully.
+
+-- ALTER TABLE bandrecognition ADD CONSTRAINT fkey_bandrecognition_bandinfo FOREIGN KEY (band_name) REFERENCES bandinfo (band_name) ON DELETE CASCADE;
+DB20000I  The SQL command completed successfully.
+
+-- INSERT INTO bandrecognition (band_name, award, nomination, year) VALUES ('Test', 'Test Award', 'A', 2020);
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0530N  The insert or update value of the FOREIGN KEY "PARTH.BANDRECOGNITION.FKEY_BANDRECOGNITION_BANDINFO" is not equal to any
+	    value of the parent key of the parent table.  SQLSTATE=23503
+
+
+Q1 d)
+
+-- INSERT INTO bandinfo (band_name, formation_year, current_status, base_city, base_country, number_of_band_members, number_of_releases, genre) 
+-- VALUES ('Test', 1920, 'Active', 'Manchester', 'United Kingdom', 4, 5, 'Indie Rock');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+ 	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDINFO.CHECK_FORMATION_YEAR". SQLSTATE=23513
+
+-- INSERT INTO bandinfo (band_name, formation_year, current_status, base_city, base_country, number_of_band_members, number_of_releases, genre) 
+-- VALUES ('Test', 2002, 'Hidden', 'Manchester', 'United Kingdom', 4, 5, 'Indie Rock');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDINFO.CHECK_CURRENT_STATUS". SQLSTATE=23513
+
+-- INSERT INTO bandinfo (band_name, formation_year, current_status, base_city, base_country, number_of_band_members, number_of_releases, genre) 
+-- VALUES ('Test', 2002, 'Active', 'Manchester', 'United Kingdom', 4, -1, 'Indie Rock');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDINFO.CHECK_NUMBER_OF_RELEASES". SQLSTATE=23513
+
+-- INSERT INTO bandinfo (band_name, formation_year, current_status, base_city, base_country, number_of_band_members, number_of_releases, genre) 
+-- VALUES ('Test', 2002, 'Active', 'Manchester', 'United Kingdom', 0, 5, 'Indie Rock');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDINFO.CHECK_NUMBER_OF_BAND_MEMBERS". SQLSTATE=23513
+
+-- INSERT INTO bandinfo (band_name, formation_year, current_status, base_city, base_country, number_of_band_members, number_of_releases, genre) 
+-- VALUES ('Test', 2002, 'Active', 'Manchester', 'United Kingdom', 4, 5, 'New Value');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDINFO.CHECK_GENRE". SQLSTATE=23513
+
+
+Q1 e)
+
+-- INSERT INTO bandrecognition (band_name, award, nomination, year) VALUES ('The 1975', 'Test Award', 'P', 2020);
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDRECOGNITION.CHECK_NOMINATION". SQLSTATE=23513
+
+-- INSERT INTO bandrecognition (band_name, award, nomination, year) VALUES ('The 1975', 'Test Award', 'N', 2070);
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDRECOGNITION.CHECK_YEAR". SQLSTATE=23513
+
+
+Q1 f)
+
+-- INSERT INTO bandmembers (band_name, last_name, first_name, role, start_year) VALUES ('Imagine Dragons', 'Reynolds', 'Dan', 'Lead vocalist', '1942-01-01');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDMEMBERS.CHECK_START_YEAR". SQLSTATE=23513
+
+
+-- INSERT INTO bandmembers (band_name, last_name, first_name, role, start_year,end_year) VALUES ('Imagine Dragons', 'Reynolds', 'Dan', 'Lead vocalist', '2020-01-01','1920-01-01');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDMEMBERS.CHECK_END_YEAR". SQLSTATE=23513
+
+
+-- INSERT INTO bandmembers (band_name, last_name, first_name, role, start_year) VALUES ('Imagine Dragons', 'Reynolds', 'Dan', 'New Value', '2020-01-01');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0545N  The requested operation is not allowed because a row does not satisfy the check constraint "PARTH.BANDMEMBERS.CHECK_ROLE". SQLSTATE=23513
+
+
+
+Q1 g)
+
+-- SELECT band_name,number_of_band_members FROM bandinfo 
+-- WHERE band_name = 'Imagine Dragons';
+
+BAND_NAME            NUMBER_OF_BAND_MEMBERS
+-------------------------------------------
+Imagine Dragons      4
+
+  1 record(s) selected.
+
+
+-- INSERT INTO bandmembers (band_name, last_name, first_name, role, start_year)
+-- VALUES ('Imagine Dragons', 'Gualti', 'Parth', 'DJ', '2023-02-10');
+
+-- SELECT band_name,number_of_band_members FROM bandinfo 
+-- WHERE band_name = 'Imagine Dragons';
+
+BAND_NAME            NUMBER_OF_BAND_MEMBERS
+-------------------------------------------
+Imagine Dragons      5
+
+  1 record(s) selected.
+
+
+
+Q1 h)
+-- INSERT INTO bandmembers (band_name, last_name, first_name, role, start_year) 
+-- VALUES ('Imagine Dragons', 'User', 'New', 'Lead vocalist', '2000-01-01');
+DB21034E  The command was processed as an SQL statement because it was not a valid Command Line Processor command.  During SQL processing it returned:
+	    SQL0438N  Application raised error or warning with diagnostic text: "Start Year cannot be before the Band Formation Year".  SQLSTATE=45000
+

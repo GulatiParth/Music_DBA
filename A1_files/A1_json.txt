@@ -1,0 +1,98 @@
+-- Parth Gulati
+
+
+-- DBA625 - JSON Examples
+-- CONNECT TO music;
+-- Table "bandinfo" has been created in Task 1
+
+-- ALTER TABLE bandinfo ADD COLUMN releases CLOB;
+
+UPDATE bandinfo
+SET releases = '{
+    "releases": [
+        {
+            "type": "album",
+            "year": 2013,
+            "title": "The 1975"
+        },
+        {
+            "type": "album",
+            "year": 2016,
+            "title": "I Like It When You Sleep"
+        },
+        {
+            "type": "album",
+            "year": 2018,
+            "title": "A Brief Inquiry"
+        }
+    ]
+}'
+WHERE band_name = 'The 1975';
+
+
+UPDATE bandinfo
+SET releases = '{
+    "releases": [
+        {
+            "type": "album",
+            "year": 2012,
+            "title": "Night Visions"
+        },
+        {
+            "type": "album",
+            "year": 2018,
+            "title": "Origins"
+        }
+    ]
+}'
+WHERE band_name = 'Imagine Dragons';
+
+
+UPDATE bandinfo
+SET releases = '{
+    "releases": [
+        {
+            "type": "album",
+            "year": 2016,
+            "title": "Memories...Do Not Open"
+        },
+        {
+            "type": "album",
+            "year": 2018,
+            "title": "Sick Boy"
+        },
+    ]
+}'
+WHERE band_name = 'The Chainsmokers';
+
+
+UPDATE bandinfo
+SET releases = '{
+    "releases": [
+        {
+            "type": "album",
+            "year": 1994,
+            "title": "Dookie"
+        },
+        {
+            "type": "album",
+            "year": 2016,
+            "title": "Revolution Radio"
+        }
+    ]
+}'
+WHERE band_name = 'Green Day';
+
+
+
+UPDATE bandinfo
+SET releases = '{
+    "releases": [
+        {
+            "type": "album",
+            "year": 2006,
+            "title": "Whatever People Say I Am"
+        }
+    ]
+}'
+WHERE band_name = 'Arctic Monkeys';

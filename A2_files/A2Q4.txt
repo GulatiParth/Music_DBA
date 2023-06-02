@@ -1,0 +1,90 @@
+Q4)
+-- SELECT band_name, wordfun(band_name) as pig_latin FROM bandinfo;
+
+BAND_NAME															    PIG_LATIN
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Arctic Monkeys
+                                                                                                    Arctic Monkeysay
+
+
+Coldplay
+                                                                                                    oldplayCay
+
+
+Foo Fighters
+                                                                                                    oo FightersFay
+
+
+Foster The People
+                                                                                                    oster The PeopleFay
+
+
+Green Day
+                                                                                                    reen DayGay
+
+
+Imagine Dragons
+                                                                                                    Imagine Dragonsay
+
+
+Muse
+                                                                                                    useMay
+
+
+Panic! At The Disco
+                                                                                                    anic! At The DiscoPay
+
+
+Radiohead
+                                                                                                    adioheadRay
+
+
+Red Hot Chili Peppers
+                                                                                                    ed Hot Chili PeppersRay
+
+
+Tame Impala
+                                                                                                    ame ImpalaTay
+
+
+The 1975
+                                                                                                    he 1975Tay
+
+
+The Black Keys
+                                                                                                    he Black KeysTay
+
+
+The Chainsmokers
+                                                                                                    he ChainsmokersTay
+
+
+The Killers
+                                                                                                    he KillersTay
+
+
+The Lumineers
+                                                                                                    he LumineersTay
+
+
+The Strokes
+                                                                                                    he StrokesTay
+
+
+The XX
+                                                                                                    he XXTay
+
+
+Twenty One Pilots
+                                                                                                    wenty One PilotsTay
+
+
+Vampire Weekend
+                                                                                                    ampire WeekendVay
+
+
+
+  20 record(s) selected.
+

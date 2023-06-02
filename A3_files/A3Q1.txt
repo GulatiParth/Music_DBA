@@ -1,0 +1,53 @@
+Q1 )
+-- CONNECT TO music USER parth USING "password"
+
+-- CREATE USER dba625a USING PASSWORD '123456'
+
+-- CONNECT RESET
+
+-- CONNECT TO music USER dba625a USING 123456;
+
+-- SELECT band_name, award, year FROM bandrecognition;
+BAND_NAME		AWARD									   YEAR
+The 1975		Grammy Award for Best Rock Album	                     2020
+Twenty One Pilots	Billboard Music Award for Top Rock Artist			   2020
+Imagine Dragons	MTV Europe Music Award for Best UK/Ireland Act	         2021
+Imagine Dragons	American Music Award for Favorite Alternative Artist	   2014
+Imagine Dragons	Grammy Award for Best Rock Performance	               2019
+Coldplay		MTV Video Music Award for Best Special Effects	         2017
+The Strokes		NME Award for Best Album	                           2021
+Twenty One Pilots	American Music Award for Favorite Pop/Rock Duo or Group  2017	
+Muse			Q Award for Best Live Act	                           2010
+Vampire Weekend	Grammy Award for Best Alternative Music Album	         2022
+The Black Keys	Grammy Award for Best Rock Performance	               2013
+Radiohead		MTV Video Music Award for Best Art Direction	         2016
+Tame Impala		ARIA Music Award for Best Group	                     2021
+The Killers		Grammy Award for Best Rock Album	                     2019
+The Killers		BRIT Award for International Group	                     2022
+The Lumineers	iHeartRadio Music Award for Best Alternative Rock Artist 2018
+Vampire Weekend	MTV Video Music Award for Best Art Direction	         2013
+The Chainsmokers	iHeartRadio Music Award for Dance/EDM Song of the Year   2018
+The Chainsmokers	Billboard Music Award for Top Dance/Electronic Artist	   2020
+The Chainsmokers	Grammy Award for Best Dance Recording	               2020
+
+
+
+-- UPDATE bandrecognition SET YEAR = 2022 WHERE band_name = 'Imagine Dragons' AND year = 2021;
+-- SELECT * FROM bandrecognition WHERE band_name = 'Imagine Dragons';
+
+Imagine Dragons	MTV Europe Music Award for Best UK/Ireland Act	         2022
+Imagine Dragons	American Music Award for Favorite Alternative Artist	   2014
+Imagine Dragons	Grammy Award for Best Rock Performance	               2019
+
+
+-- UPDATE bandinfo SET band_name = 'New Imagine Dragons' WHERE WHERE band_name = 'Imagine Dragons';
+SQL0551N  dba625a does not have the required authorization or privilege to perform operation "UPDATE" on object "BANDINFO".
+
+
+
+-- CREATE VIEW my_view AS SELECT * FROM bandrecognition WHERE band_name = 'Imagine Dragons';
+DB20000I  The SQL command completed successfully.
+
+
+-- CREATE INDEX new_index ON bandrecognition (band_name);
+SQL0551N  dba625a does not have the required authorization or privilege to perform operation "CREATE" on object "BANDINFO".
